@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/decimal_quinario.css">
+    <title>BrConvert</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><span>Br</span>Convert</h1>
+            <ul>
+                <li><a href="indedx.html">Conversor</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="decimalQuinario">
+             <div class="decimalQuinario_areaCalculo">
+                <div class="container">
+                    <input type="number" id="numero" placeholder="Insira o Valor Decimal">
+                    <button onclick="decimalQuinario()">Converter</button>
+                    <div class="resultado" id="resultado">
+                        Resultado Quinario.
+                    </div>
+                    <div class="informacoes">
+                        <h2>Conversão de decimal para Quináro</h2>
+                       <p>Procedimento - Método das divisões sucessivas por 5: <br>
+                        1. Divida o número decimal por 5 até o resto ser menor que o divisor. <br>
+                        
+                        2. Se possível, divida o quociente por 5 novamente e repita até que o quociente seja menor que 5, senão, vá para a próxima etapa. <br>
+                        
+                        3. Escreva o número iniciando do último quociente até o resto da primeira divisão. <br>
+                        
+         
+                        Exemplificando, vamos converter 92 (decimal) em quinário: <br>
+                        
+                        92/5 = 18 resto 2 <br>
+                        18/5 = 3 resto 3 <br>
+                        
+                        92(dec) => 332(qui) <br>
+                        Portanto, 92 em decimal equivale a 332 em quinário .</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="inverter">
+        <button><a href="quinario_decimal.html">Inverter</a></button>
+    </div>
+    <script src="scrpt/decimal_quinario.js"></script>
+</body>
+</html>

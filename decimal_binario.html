@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/decimal_binario.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrConvert</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><span>Br</span>Convert</h1>
+            <ul>
+                <li><a href="indedx.html">Conversor</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="decimalBinario">
+             <div class="decimalBinario_areaCalculo">
+                <div class="container">
+                    <input type="number" id="numero" placeholder="Insira o Valor Decimal">
+                    <button onclick="decimalBinario()">Converter</button>
+                    <div class="resultado" id="resultado">
+                        Resultado Binário.
+                    </div>
+                    <div class="informacoes">
+                        <h2>Conversão de decimal para binário</h2>
+                       <p>A técnica de divisões sucessivas é utilizada para conversão de números inteiros do sistema decimal para o binário.
+                            Esta técnica consiste em dividir o número original pela base 2, 
+                            o resto da divisão será um dígito e o resultado da divisão é novamente dividido por 2. 
+                            Esta última etapa se repete até que o resultado da divisão seja zero.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="inverter">
+        <button><a href="binario_decimal.html">Inverter</a></button>
+    </div>
+    <script src="scrpt/decimal_binario.js"></script>
+</body>
+</html>

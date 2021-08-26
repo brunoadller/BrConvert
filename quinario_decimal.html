@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/quinario_decimal.css">
+    <title>BrConvert</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><span>Br</span>Convert</h1>
+            <ul>
+                <li><a href="indedx.html">Conversor</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="quinarioDecimal">
+             <div class="quinarioDecimal_areaCalculo">
+                <div class="container">
+                    <input type="text" id="numero" placeholder="Insira o Valor quinario">
+                    <button onclick="quinarioDecimal()">Converter</button>
+                    <div class="resultado" id="resultado">
+                        Resultado Decimal.
+                    </div>
+                    <div class="informacoes">
+                        <h2>Conversão de quinario para decimal</h2>
+                       <p>
+                        Conversão de quinário para decimal pode ser feita através do TFN (Teorema Fundamental da Numeração). 
+                        Para isso, consideramos o k-ésimo algarismo do número quinário (a partir das unidades - da direita para a esquerda) e multiplicamos por 5<sup>(k-1)</sup>. 
+                        Em seguida, somamos todas as parcelas e encontramos o número decimal equivalente. <br>
+
+                        Por exemplo, o número 124 (quinário) em decimal: <br>
+                        
+                        124<sub>5</sub> = 1 x 5<sup>2</sup> + 2 x 5<sup>1</sup> + 4 x 5<sup>0</sup> <br>
+                        
+                        Portanto, 124 em quinário equivale a 39 em decimal.
+                       </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="inverter">
+        <button><a href="decimal_quinario.html">Inverter</a></button>
+    </div>
+    <script src="scrpt/quinario_decimal.js"></script>
+</body>
+</html>

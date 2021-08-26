@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/decimal_hexadecimal.css">
+    <title>BrConvert</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><span>Br</span>Convert</h1>
+            <ul>
+                <li><a href="indedx.html">Conversor</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="decimalHexa">
+             <div class="decimalHexa_areaCalculo">
+                <div class="container">
+                    <input type="number" id="numero" placeholder="Insira o Valor Decimal">
+                    <button onclick="decimalHexadecimal()">Converter</button>
+                    <div class="resultado" id="resultado">
+                        Resultado Hexadecimal.
+                    </div>
+                    <div class="informacoes">
+                        <h2>Conversão de decimal para Hexadecimal</h2>
+                       <p>Os números hexadecimais são caracterizados pela base de número 16. Sendo assim, a nossa conversão terá como base o número 16, que será também o número para divisão.
+
+                        O primeiro passo da conversão é definir o número que será convertido. Como exemplo, vamos converter o número 438 para hexadecimal. Sendo assim, realizaremos o seguinte cálculo:
+                        
+                        438 / 16
+                        
+                        O nosso resultado será os números 27, 11 e 1. Lembrando que o cálculo deve ser feito progressivamente para obter todos os resultados necessários. Considerando o resultado das divisões, 
+                        a leitura é feita de forma ascendente, ou seja, 1, 11 e 27, que correspondem a 11.127. Como estamos convertendo para hexadecimal, o resultado final é 1B6∴16.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="inverter">
+        <button><a href="hexadecimal_decimal.html">Inverter</a></button>
+   </div>
+    <script src="scrpt/decimal_hexadecimal.js"></script>
+</body>
+</html>

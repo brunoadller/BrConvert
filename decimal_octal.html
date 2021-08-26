@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/decimal_octal.css">
+    <title>BrConvert</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><span>Br</span>Convert</h1>
+            <ul>
+                <li><a href="indedx.html">Conversor</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="decimalOctal">
+             <div class="decimalOctal_areaCalculo">
+                <div class="container">
+                    <input type="number" id="numero" placeholder="Insira o Valor Decimal">
+                    <button onclick="decimalOctal()">Converter</button>
+                    <div class="resultado" id="resultado">
+                        Resultado Octal.
+                    </div>
+                    <div class="informacoes">
+                        <h2>Conversão de decimal para Octal</h2>
+                       <p>Para converter um número decimal para octal, basta realizar divisões sucessivas do número decimal por 8 (base do sistema octal).</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="inverter">
+        <button><a href="octal_decimal.html">Inverter</a></button>
+    </div>
+    <script src="scrpt/decimal_octal.js"></script>
+</body>
+</html>
